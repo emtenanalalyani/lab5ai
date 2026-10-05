@@ -1,0 +1,81 @@
+elcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+46 ?- consult(['c:/Users/shaza/Desktop/emtenan/AI labs/lab5.pl']).
+true.
+
+46 ?- father(homer,bart).
+true.
+
+47 ?- father(abraham,homer).
+true.
+
+48 ?- mother(marge,bart).
+true.
+
+49 ?- mother(mona,homer).
+true.
+
+50 ?- son(bart,homer).
+true.
+
+51 ?- son(homer,abraham).
+true.
+
+52 ?- daughter(lisa,homer)
+|    .
+true.
+
+53 ?- daughter(maggie,homer).
+true.
+
+54 ?- brother(bart,lisa).
+true .
+
+55 ?- brother(bart,maggie).
+true .
+
+56 ?- sister(lisa,bart).
+true .
+
+57 ?- sister(maggie,bart).
+true .
+
+58 ?- grandfather(abraham,bart).
+true.
+
+59 ?- grandfather(abraham,lisa).
+true.
+
+60 ?- aunt(patty,ling).
+true .
+
+61 ?- aunt(selma,ling).
+false.
+
+62 ?- uncle(herb,bart).
+true .
+
+63 ?- uncle(clancy,ling).
+false.
+
+64 ?- cousin(bart,ling).
+false.
+
+65 ?- cousin(lisa,ling).
+false.
+
+66 ?- ancestor(homer,bart).
+ERROR: Unknown procedure: ancestor/2 (DWIM could not correct goal)
+67 ?- consult(['c:/Users/shaza/Desktop/emtenan/AI labs/lab5.pl']).
+true.
+
+68 ?- ancestor(homer,bart).
+true .
+
+69 ?- ancestor(abraham,bart).
+true .
